@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
+import { Header } from './UI/header'
+import { Footer } from './UI/footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,7 +18,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <script async src="node_modules/@material-tailwind/html/scripts/ripple.js"></script>
+      <body className={inter.className}>
+        <div style={{display: 'grid', gridTemplateRows: 'auto 1fr auto', height: '100vh'}}>
+        <Header/>
+        {children}
+        <Footer/>
+        </div>
+        </body>
     </html>
   )
 }
