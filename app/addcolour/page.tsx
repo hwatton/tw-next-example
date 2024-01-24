@@ -12,10 +12,9 @@ function AddColour(){
 
     const [color, setColor] = useState("#aabbcc");
     return <div>
-    <div>add a colour </div>
+    <div>add a colour page</div>
     <HexColorPicker color={color} onChange={setColor} />
-    <p>{color}</p>
-    <CustomButton value={'bizarre placeholder value'}/>
+     <CustomButton colour={color}/>
     </div>
 
 }

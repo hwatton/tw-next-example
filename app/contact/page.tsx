@@ -20,7 +20,11 @@ function Contact() {
     return <div className={styles.container}>
        <form className="m-20"action={contactAction}>
       <h1>Get in touch</h1>
-      <div className="email block">
+      <div className="email block" style={{
+        display: 'grid',
+        gridTemplateColumns: '100px 1fr',
+        gap: '10px'
+      }}>
         <label htmlFor="frm-email">Email</label>
         <input
           style={{backgroundColor: 'rgb(222,222,222)'}}
@@ -31,7 +35,11 @@ function Contact() {
           required
         />
       </div>
-      <div className="block phone">
+      <div className="block phone" style={{
+        display: 'grid',
+        gridTemplateColumns: '100px 1fr',
+        gap: '10px'
+      }}>
         <label htmlFor="frm-phone">Phone</label>
         <input
           id="frm-phone"
@@ -41,8 +49,12 @@ function Contact() {
           required
         />
       </div>
-      <div className="name block">
-        <div>
+      <div className="name block" style={{
+        display: 'grid',
+        gridTemplateColumns: '100px 1fr',
+        gap: '10px'
+      }}>
+   
           <label htmlFor="frm-first">First Name</label>
           <input
             id="frm-first"
@@ -52,7 +64,11 @@ function Contact() {
             required
           />
         </div>
-        <div>
+        <div style={{
+        display: 'grid',
+        gridTemplateColumns: '100px 1fr',
+        gap: '10px'
+      }}>
           <label htmlFor="frm-last">Last Name</label>
           <input
             id="frm-last"
@@ -62,7 +78,7 @@ function Contact() {
             required
           />
         </div>
-      </div>
+
 
       <div className="button block">
       <Submit/>

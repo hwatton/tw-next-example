@@ -4,6 +4,7 @@ import './globals.css'
 import { Header } from './UI/header'
 import { Footer } from './UI/footer'
 
+
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -16,15 +17,20 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+
+
+
   return (
     <html lang="en">
       <script async src="node_modules/@material-tailwind/html/scripts/ripple.js"></script>
       <body className={inter.className}>
+ 
         <div style={{display: 'grid', gridTemplateRows: 'auto 1fr auto', height: '100vh'}}>
         <Header/>
         {children}
         <Footer/>
         </div>
+    
         </body>
     </html>
   )
