@@ -27,7 +27,9 @@ export default function RootLayout({
  
         <div style={{display: 'grid', gridTemplateRows: 'auto 1fr auto', height: '100vh'}}>
         <Header/>
+        <div className="h-full w-full">
         {children}
+        </div>
         <Footer/>
         </div>
     

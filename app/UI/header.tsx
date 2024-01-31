@@ -19,6 +19,7 @@ export const Header = () => {
      <NavLinkWrapper><Link href="/">Home</Link></NavLinkWrapper>
      <NavLinkWrapper><Link href="/addcolour">Add Colour</Link></NavLinkWrapper>
      <NavLinkWrapper><Link href="/datacomponent">Data Component</Link></NavLinkWrapper>
+     <NavLinkWrapper><Link href="/flexComponent">Flex Component</Link></NavLinkWrapper>
           
       
       </div>

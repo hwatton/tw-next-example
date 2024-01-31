@@ -1,5 +1,6 @@
 import type { Config } from 'tailwindcss'
 const withMT = require("@material-tailwind/html/utils/withMT")
+const colors = require('tailwindcss/colors')
 
 const config: Config = withMT({
   content: [
@@ -17,6 +18,7 @@ const config: Config = withMT({
       },
       colors :{ 
         'superLime': '#22ff11',
+        ...colors
       },
       
     },
