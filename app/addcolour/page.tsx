@@ -11,10 +11,12 @@ function AddColour(){
     
 
     const [color, setColor] = useState("#aabbcc");
-    return <div>
+    return <div className="flex h-full justify-center items-center">
+        <div>
     <div>add a colour page</div>
     <HexColorPicker color={color} onChange={setColor} />
      <CustomButton colour={color}/>
+     </div>
     </div>
 
 }
